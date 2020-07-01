@@ -92,6 +92,7 @@ const addProduct = async ({ request, response }: { request: any, response: any }
         }
     }
 }
+
 const updateProduct = async ({ params, request, response }: { params: { id: string }, request: any, response: any }) => {
 
     const product: Product | undefined = products.find(p => p.id === params.id);
