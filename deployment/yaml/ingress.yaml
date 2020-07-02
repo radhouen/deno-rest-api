@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: deno-ingress
+spec:
+  rules:
+  - host: api.minikube.local
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: api
+          servicePort: 80

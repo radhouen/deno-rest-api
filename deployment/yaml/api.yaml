@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+      - image: radhouenassakra/deno-docker:0.0.1
+        imagePullPolicy: Never
+        name: api
+        ports:
+        - name: api
+          containerPort: 8000
+
