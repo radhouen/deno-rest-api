@@ -13,10 +13,10 @@ spec:
         app: api
     spec:
       containers:
-      - image: radhouenassakra/deno-docker:0.0.1
+      - image: nginx
         imagePullPolicy: Never
         name: api
         ports:
         - name: api
-          containerPort: 8000
+          containerPort: 80
 
