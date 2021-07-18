@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
       - image: nginx
-        imagePullPolicy: Never
         name: api
         ports:
         - name: api
