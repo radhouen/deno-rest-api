@@ -10,6 +10,7 @@ console.log(`Server running in port ${port}`);
 app.listen({ port: 8000 });*/
 
 import { Application, Router } from "https://deno.land/x/oak/mod.ts";
+import "https://deno.land/std@0.190.0/dotenv/mod.ts"
 
 const router = new Router();
 router.get("/", (ctx) => {
