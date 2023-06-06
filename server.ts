@@ -1,5 +1,5 @@
-import { Application } from "https://deno.land/std@0.188.0/dotenv/mod.ts";
-import router from './routes.ts';
+import { Application, router } from "https://deno.land/x/oak/mod.ts";
+//#region import router from './routes.ts';
 
 const app = new Application();
 const port = 8000 
