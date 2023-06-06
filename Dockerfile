@@ -1,4 +1,4 @@
-FROM hayd/alpine-deno:1.0.0
+FROM debian:11 
 
 EXPOSE 8000
 
