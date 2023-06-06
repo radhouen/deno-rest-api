@@ -1,4 +1,4 @@
-FROM hayd/alpine-deno:1.0.0
+FROM denoland/deno:1.19.0
 
 EXPOSE 8000
 
